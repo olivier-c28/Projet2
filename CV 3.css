@@ -1,0 +1,251 @@
+@font-face /* Définition des polices personnalisées */
+{
+    font-family: 'Dayrom';
+    src: url('police/dayrom.eot');
+    src: url('police/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('police/dayrom.woff') format('woff'),
+         url('police/dayrom.ttf') format('truetype'),
+         url('police/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+	height: auto;
+	width: 1000px;
+	margin: auto;
+	font-family: 'Dayrom', Arial, Helvetica, sans-serif;
+	font-size: 16px;
+}
+
+header
+{
+	position: absolute;
+	left: 590px;
+}
+
+h1
+{
+	font-size: 45px;
+	font-weight: normal;
+}
+
+.jaune
+{
+	color: #FFD600;
+}
+
+.taille
+{
+	font-size: 20px;
+}
+
+#position
+{
+	display: flex;
+	flex-direction: row;
+}
+
+aside /* Partie liseret */
+{
+	position: relative;
+	width: 405px;
+	height: 1420px;
+	background-color: #FFD600;
+	word-break: break-all;
+}
+
+h2
+{
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color : #FFD600;
+	background-color: #424242;
+	border:1px solid black;
+}
+
+.moi
+{
+	text-transform: uppercase;
+}
+
+p
+{
+	margin-left: 30px;
+	margin-right: 30px;
+	word-break: normal;
+}
+
+img
+{
+   width:200px;
+   clip-path: ellipse(35% 50%);
+   position: relative;
+   left: 40px;
+   margin-top: 50px;
+}
+
+#hobbies
+{
+	display: flex;
+	justify-content: space-around;
+	position: relative;
+	top: 390px;
+}
+
+.fas.fa-running.fa-2x
+{
+	color: #424242;
+}
+
+.fas.fa-plane.fa-2x
+{
+	color: #424242;
+}
+
+.fas.fa-gamepad.fa-2x
+{
+	color: #424242;
+}
+
+.titre
+{
+	position: relative;
+	top: 390px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+	color : #FFD600;
+	background-color: #424242;
+	border:1px solid black;
+}
+
+table /* partie section */
+{
+	margin-top: 200px;
+	margin-left: 100px;
+	word-break: break-all;
+	border-spacing: 0px 28px;
+	
+	
+}
+
+caption
+{
+	font-size: 23px;
+	text-transform: capitalize;
+	text-align: left;
+}
+
+td
+{
+	empty-cells: top;
+	width: 465px;
+	vertical-align: top;
+	word-break: normal;
+}
+
+hr
+{
+	height: 1px;
+  	background-color: #FFD600;
+}
+
+i
+{
+	color: #FFD600;
+}
+
+.far.fa-dot-circle
+{
+	position: relative;
+	right: 14px;
+}
+.cercle {
+    width: 7px;
+	height: 7px;
+	border-radius: 20px;
+	background: #FFD600;
+	display: inline-block;
+	position: relative;
+	right: 14px;
+	margin-left: 4px;
+}
+
+@media all and (max-width: 1024px)
+{
+    body 
+    {
+		width: auto;
+		background-color: #FFD600;
+		font-size: 20px;
+    }
+
+	aside
+	{
+		width: auto;
+	}
+
+    #position
+    {
+		flex-direction: column;
+		position: absolute;
+    }
+
+    section
+    {
+        width: auto;
+		margin-bottom: 15px;
+		margin-right: 50px;
+    }
+
+	header
+	{
+		position: static;
+		margin-left: 350px;
+	}
+
+	img 
+	{
+		left: 390px;
+	}
+
+	.jaune, hr, i, h2, .titre
+	{
+		color: white;
+	}
+
+	.cercle
+	{
+		background-color: white;
+	}
+
+	.fas.fa-running.fa-2x, .fas.fa-plane.fa-2x, .fas.fa-gamepad.fa-2x
+	{
+		color: white;
+	}
+
+	#hobbies
+	{
+		top: 150px;
+	}
+	.titre
+	{
+		top: 150px;
+	}
+
+	table
+	{
+		margin-top: 0px;
+	}
+
+}
+
+
+
+
+
+
+
